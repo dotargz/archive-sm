@@ -202,3 +202,7 @@ h1 + p {
     font-style: italic;
     font-weight: bold;
 }
+
+a {
+    color: #551A8B;
+}
