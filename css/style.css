@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #f6f6f6;
+	color: #333333;
+	font-family: "Lora", serif;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: left;
+	min-height: 100vh;
+
+	width: 100%;
+}
+
+#container {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+#nav {
+	font-size: 1em;
+	padding: 0.5em;
+	margin-bottom: 1em;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	border-bottom: #333333 1px solid;
+}
+
+#nav-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 1em;
+	align-items: center;
+}
+
+#nav-links a {
+	text-decoration: none;
+	color: #333333;
+
+	transition: color 0.2s ease-in-out;
+}
+
+#nav-links a:hover {
+	color: #666666;
+}
+
+.subtitle {
+	font-size: 0.8em;
+	font-style: italic;
+	color: #666666;
+	font-weight: lighter;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+}
+
+h1 + p {
+	margin-top: 0.2em;
+}
+
+#download-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.download-item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+    align-items: center;
+}
+
+.separator {
+    width: 100%;
+    height: 0;
+    border-bottom: #cccccc 1px solid;
+}
+
+.download-item-image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+.download-item-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.1em;
+}
+
+.download-item-title {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.download-item-title > a {
+    text-decoration: none;
+    color: #333333;
+    transition: 0.2s ease-in-out;
+}
+
+.download-item-title > a:hover {
+    color: #666666;
+}
+
+.download-item-content {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.download-item-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+}
+
+/* big Circle button */
+.download-item-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    padding: 0.5em 1.5em;
+    border-radius: 1em;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.download-item-button:hover {
+    background-color: #666666;
+    cursor: pointer;
+}
+
+/* make sure to add a footer with a border-top */
+#footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em 0;
+    border-top: #333333 1px solid;
+}
+
+#footer > p {
+    margin: 0;
+    padding: 0;
+}
+
+.wikipedia-link {
+    font-style: italic;
+    color: #666666;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+.italic-bold {
+    font-style: italic;
+    font-weight: bold;
+}
