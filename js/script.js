@@ -37,6 +37,13 @@ window.onload = function () {
 				span.dataset.playing = "true";
 				audioObjects[songUrl] = new Audio(songUrl);
 				audioObjects[songUrl].play();
+
+				// reset the button when the song is over
+				audioObjects[songUrl].addEventListener("ended", () => {
+					icon.classList.remove("fa-circle-pause");
+					icon.classList.add("fa-circle-play");
+					span.dataset.playing = "false";
+				});
 			}
 		});
 	});
