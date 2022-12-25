@@ -1,5 +1,5 @@
 window.onload = function () {
-	console.log("[script.js] loaded");
+	console.log("[music.js] loaded");
 
 	const playIcons = document.querySelectorAll(".download-item-play i");
 	const playButtons = document.querySelectorAll(".download-item-play");
